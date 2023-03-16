@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+
+<body>
+
+    <h1>Descubra qual seria o seu rendimento com nossa tecnologia</h1>
+    <h2>Quantos hectares você possui?</h2>
+    <input id="hectar">
+
+    <button onclick="cal()">Descobrir</button>
+
+    <div id="texto"></div>
+    <div id="texto1"></div>
+
+    <script>
+        function cal() {
+
+            var total = 45300
+            var perda = 0.75
+
+            var AAA = hectar.value * total
+            var BBB = AAA * perda
+
+            texto.innerHTML = `<br>Com R$${hectar.value} hectares de uva o valor ganho sem a nossa tecnologia é de R$${BBB}, já com a nossa tecnologia os seus lucros seriam de ${AAA}.`
+
+            texto1.innerHTML = `Pois com a nossa ajuda as perdas na produção de uvas seriam minimizadas em 25%.`
+
+        }
+
+    </script>
+</body>
+
+</html>
